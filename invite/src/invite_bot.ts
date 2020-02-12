@@ -18,7 +18,7 @@ import {Octokit} from '@octokit/rest';
 
 import {dbConnect} from './db';
 import {GitHub} from './github';
-import {ILogger, Invite, InviteAction} from './types';
+import {ILogger, Invite, InviteAction} from '.';
 import {InvitationRecord} from './invitation_record';
 
 const INVITE_MACROS: Record<string, InviteAction> = {

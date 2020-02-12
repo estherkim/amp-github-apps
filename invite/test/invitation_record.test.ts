@@ -18,7 +18,7 @@ import Knex from 'knex';
 
 import {Database} from '../src/db';
 import {setupDb} from '../src/setup_db';
-import {Invite, InviteAction} from '../src/types';
+import {Invite, InviteAction} from '../src';
 import {InvitationRecord} from '../src/invitation_record';
 
 describe('invitation record', () => {

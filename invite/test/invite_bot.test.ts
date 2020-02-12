@@ -16,7 +16,7 @@
 
 import {mocked} from 'ts-jest/utils';
 
-import {Invite, InviteAction} from '../src/types';
+import {Invite, InviteAction} from '../src';
 import {InvitationRecord} from '../src/invitation_record';
 import {InviteBot} from '../src/invite_bot';
 import {GitHub} from '../src/github';
