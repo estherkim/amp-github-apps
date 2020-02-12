@@ -13,7 +13,8 @@
  * limitations under the License.
  */
 
-import {Database, dbConnect} from './db';
+import {dbConnect} from './db';
+import {Database} from '.';
 
 /** Set up the database table. */
 export function setupDb(db: Database) {

@@ -15,9 +15,10 @@
 
 require('dotenv').config();
 
+import {Database} from '.';
+
 import Knex from 'knex';
 
-export type Database = Knex;
 /** Connect to a database instance. */
 export function dbConnect(): Database {
   return Knex({

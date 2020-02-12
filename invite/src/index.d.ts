@@ -14,9 +14,12 @@
  * limitations under the License.
  */
 
-/**
- * A standard logging interface.
- */
+import Knex from 'knex';
+
+/** A Knex database interface. */
+export type Database = Knex;
+
+/** A standard logging interface. */
 export interface ILogger {
   debug(message: string, ...extraInfo: any[]): void;
   warn(message: string, ...extraInfo: any[]): void;
@@ -24,17 +27,13 @@ export interface ILogger {
   info(message: string, ...extraInfo: any[]): void;
 }
 
-/**
- * Possible invite action types.
- */
+/** Possible invite action types. */
 export enum InviteAction {
   INVITE = 'invite',
   INVITE_AND_ASSIGN = 'invite_and_assign',
 }
 
-/**
- * An invite triggered by the bot.
- */
+/** An invite triggered by the bot. */
 export interface Invite {
   username: string;
   repo: string;

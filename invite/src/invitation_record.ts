@@ -14,8 +14,7 @@
  * limitations under the License.
  */
 
-import {Database} from './db';
-import {ILogger, Invite} from '.';
+import {Database, ILogger, Invite} from '.';
 
 // TODO: Enable after filling in implementations.
 /* eslint-disable @typescript-eslint/no-unused-vars */
