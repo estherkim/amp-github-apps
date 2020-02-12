@@ -20,8 +20,8 @@ import nock from 'nock';
 import {Probot} from 'probot';
 
 import app from '../app';
-import {Database, dbConnect} from '../src/db';
-import {InviteAction} from '../src/types';
+import {dbConnect} from '../src/db';
+import {Database, InviteAction} from '../src';
 import {setupDb} from '../src/setup_db';
 import {triggerWebhook, getFixture} from './fixtures';
 
