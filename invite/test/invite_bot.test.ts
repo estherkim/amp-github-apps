@@ -16,9 +16,9 @@
 
 import {mocked} from 'ts-jest/utils';
 
-import {Invite, InviteAction} from '../src';
 import {InvitationRecord} from '../src/invitation_record';
 import {InviteBot} from '../src/invite_bot';
+import {Invite, InviteAction} from 'invite-types';
 import {GitHub} from '../src/github';
 
 describe('Invite Bot', () => {
@@ -36,7 +36,7 @@ describe('Invite Bot', () => {
       .mockImplementation(async () => {});
     jest.spyOn(GitHub.prototype, 'assignIssue')
       .mockImplementation(async () => {});
-    jest.spyOn(InvitationRecord.prototype, 'recordInvite');
+    //jest.spyOn(InvitationRecord.prototype, 'recordInvite');
   });
 
   afterEach(() => {

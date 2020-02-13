@@ -14,10 +14,10 @@
  */
 
 import {dbConnect} from './db';
-import {Database} from '.';
+import Knex from 'knex';
 
 /** Set up the database table. */
-export function setupDb(db: Database) {
+export function setupDb(db: Knex) {
   return db.schema.createTable('invites', table => {
     table.increments('id').primary();
     table.string('username', 40);

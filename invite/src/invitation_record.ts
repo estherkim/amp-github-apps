@@ -14,7 +14,8 @@
  * limitations under the License.
  */
 
-import {Database, ILogger, Invite} from '.';
+import Knex from 'knex';
+import {ILogger, Invite} from 'invite-types';
 
 // TODO: Enable after filling in implementations.
 /* eslint-disable @typescript-eslint/no-unused-vars */
@@ -26,7 +27,7 @@ export class InvitationRecord {
   /**
    * Constructor.
    */
-  constructor(private db: Database, private logger: ILogger = console) {}
+  constructor(private db: Knex, private logger: ILogger = console) {}
 
   /**
    * Records an invite created by the bot.

@@ -15,8 +15,7 @@
  */
 
 import {Octokit} from '@octokit/rest';
-
-import {ILogger} from '.';
+import {ILogger} from 'invite-types';
 
 /**
  * Interface for working with the GitHub API.

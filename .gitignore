@@ -1,5 +1,5 @@
 **/node_modules/**
 .env
+invite/src/*.js
 pr-deploy/src/*.js
-release-tagging/src/*.js
 coverage/

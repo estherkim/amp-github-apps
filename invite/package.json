@@ -12,15 +12,12 @@
     "lint": "eslint **/*.ts",
     "fix": "eslint **/*.ts --fix",
     "lint-conflicts": "eslint --print-config app.ts | eslint-config-prettier-check",
-
     "build": "tsc",
     "build:watch": "tsc -w --p tsconfig.json",
     "setup-db": "node dist/src/setup_db.js",
-
     "start": "probot run dist/app.js",
     "dev": "nodemon",
     "deploy-tag": "git tag 'deploy-invite-'`date --utc '+%Y%m%d%H%M%S'`",
-
     "test": "jest",
     "test:watch": "jest --watch --notify --notifyMode=change"
   },
@@ -43,7 +40,7 @@
     "eslint": "6.8.0",
     "eslint-config-prettier": "6.10.0",
     "eslint-plugin-prettier": "3.1.2",
-    "jest": "24.9.0",
+    "jest": "25.1.0",
     "nock": "11.7.2",
     "nodemon": "2.0.2",
     "prettier": "1.19.1",
@@ -64,6 +61,10 @@
   },
   "jest": {
     "preset": "ts-jest",
+    "moduleFileExtensions": ["js", "json", "jsx", "ts", "tsx", "node", "d.ts"],
+    "moduleNameMapper": {
+      "invite-types": "<rootDir>/src/types/index.d.ts"
+    },
     "testEnvironment": "node",
     "testPathIgnorePatterns": [
       "<rootDir>/node_modules/",

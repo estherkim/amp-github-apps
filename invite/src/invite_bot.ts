@@ -17,8 +17,8 @@
 import {Octokit} from '@octokit/rest';
 
 import {dbConnect} from './db';
-import {GitHub} from './github';
-import {ILogger, Invite, InviteAction} from '.';
+import { GitHub } from './github';
+import {ILogger, Invite, InviteAction} from 'invite-types';
 import {InvitationRecord} from './invitation_record';
 
 const INVITE_MACROS: Record<string, InviteAction> = {
@@ -42,7 +42,7 @@ const FULL_MACRO_REGEX: RegExp = new RegExp(
 export class InviteBot {
   readonly helpUserTag: string;
   readonly github: GitHub;
-  readonly record: InvitationRecord;
+  readonly record: any;
 
   /**
    * Constructor.
